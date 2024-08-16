@@ -11,3 +11,8 @@ function addToHello(name: string): string{
 function callPhone(phone: number | string): number | string{
     return phone;
 }
+
+
+async function getDataBase(id: number): Promise<string> {
+    return "Lucas";
+}
