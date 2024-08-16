@@ -15,3 +15,22 @@ let indefinido: undefined = undefined;
 // tipos abrangentes: any, void
 let retornoView: any = false;
 let retorno: void;
+
+//objeto - sem previsibilidade
+let pessoa: object = {
+    name: "Lucas",
+    cidade: "teresina",
+    idade: 21,
+};
+
+//objeto tipado - com previsibilidade
+type Produto ={
+    nome: string;
+    preco: number;
+    unidades: number;
+};
+
+
+
+
+
