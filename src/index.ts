@@ -50,6 +50,10 @@ let infos: (string | number)[] = ["Lucas", 21];
  */
 let boleto: [string, number, number] = ["conta agua", 10.00, 343245];
 
-
+/**
+ * Date
+ */
+let aniversario: Date = new Date("2024-12-25 09:30");
+console.log(aniversario.toString());
 
 
