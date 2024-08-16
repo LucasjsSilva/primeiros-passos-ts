@@ -5,3 +5,6 @@ function addNumber(x, y) {
 function addToHello(name) {
     return `Hello ${name}`;
 }
+function callPhone(phone) {
+    return phone;
+}

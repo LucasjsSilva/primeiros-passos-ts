@@ -8,3 +8,6 @@ function addToHello(name: string): string{
     return `Hello ${name}`;
 }
 
+function callPhone(phone: number | string): number | string{
+    return phone;
+}
