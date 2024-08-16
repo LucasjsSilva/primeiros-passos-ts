@@ -34,8 +34,12 @@ type Produto ={
  * arrays
  */
 
+//so com um tipo
 let dados: string[]=["Lucas", "Eduarda", "Cecilia"];
 let dados2: Array<string> = ["Lucas", "Eduarda", "Cecilia"];
+
+//multi types
+let infos: (string | number)[] = ["Lucas", 21];
 
 
 
