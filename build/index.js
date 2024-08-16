@@ -15,3 +15,4 @@ let pessoa = {
 let dados = ["Lucas", "Eduarda", "Cecilia"];
 let dados2 = ["Lucas", "Eduarda", "Cecilia"];
 let infos = ["Lucas", 21];
+let boleto = ["conta agua", 10.00, 343245];

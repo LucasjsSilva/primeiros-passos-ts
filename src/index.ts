@@ -16,6 +16,10 @@ let indefinido: undefined = undefined;
 let retornoView: any = false;
 let retorno: void;
 
+/**
+ * Objetos
+ */
+
 //objeto - sem previsibilidade
 let pessoa: object = {
     name: "Lucas",
@@ -31,7 +35,7 @@ type Produto ={
 };
 
 /**
- * arrays
+ * Arrays
  */
 
 //so com um tipo
@@ -41,6 +45,10 @@ let dados2: Array<string> = ["Lucas", "Eduarda", "Cecilia"];
 //multi types
 let infos: (string | number)[] = ["Lucas", 21];
 
+/**
+ * Tuplas
+ */
+let boleto: [string, number, number] = ["conta agua", 10.00, 343245];
 
 
 
