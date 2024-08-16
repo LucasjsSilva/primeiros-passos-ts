@@ -1,21 +1,8 @@
 "use strict";
-class Character {
-    constructor(name, stregth, skill) {
-        this.name = name;
-        this.stregth = stregth;
-        this.skill = skill;
-    }
-    atack() {
-        console.log(`${this.name} atack with ${this.stregth} points`);
-    }
+function concatArrays(...itens) {
+    return new Array().concat(...itens);
 }
-class Magician extends Character {
-    constructor(name, stregth, skill, magicPoints) {
-        super(name, stregth, skill);
-        this.magicPoints = magicPoints;
-    }
-}
-const p1 = new Character("Magikarp", 10, 11);
-const p2 = new Magician("Patolino", 5, 10, 1000);
-console.log(p1);
-p1.atack();
+const numArray = concatArrays([1, 2, 3], [4]);
+const stgArray = concatArrays(["Lucas", "Jesus"], ["Santos", "Silva"]);
+console.log(numArray);
+console.log(stgArray);

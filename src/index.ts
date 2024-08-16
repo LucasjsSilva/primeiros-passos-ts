@@ -1,40 +1,10 @@
-//classes
-
-/**
- * Data modifiers
- * Public(padrao)
- * protect
- * private
- */
-
-class Character {
-    public name: string;
-    protected stregth: number;
-    private skill: number;
-
-    constructor(name: string, stregth: number, skill: number) {
-        this.name = name;
-        this.stregth = stregth;
-        this.skill = skill;
-    }
-
-    atack(): void {
-        console.log(`${this.name} atack with ${this.stregth} points`);
-    }
+//Generics
+function concatArrays<T>(...itens: T[]): T[]{
+    return new Array().concat(...itens);
 }
 
-//superclass: Character
-//subclass: Magician
+const numArray = concatArrays<number[]>([1, 2, 3], [4]);
+const stgArray = concatArrays<string[]>(["Lucas", "Jesus"], ["Santos", "Silva"]);
 
-class Magician extends Character {
-    magicPoints: number;
-    constructor(name: string, stregth: number, skill: number, magicPoints: number) {
-        super(name, stregth, skill);
-        this.magicPoints = magicPoints;
-    }
-}
-
-const p1 = new Character("Magikarp", 10, 11);
-const p2 = new Magician("Patolino",5,10,1000)
-console.log(p1);
-p1.atack();
+console.log(numArray);
+console.log(stgArray);
