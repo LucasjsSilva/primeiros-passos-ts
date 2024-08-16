@@ -30,6 +30,13 @@ type Produto ={
     unidades: number;
 };
 
+/**
+ * arrays
+ */
+
+let dados: string[]=["Lucas", "Eduarda", "Cecilia"];
+let dados2: Array<string> = ["Lucas", "Eduarda", "Cecilia"];
+
 
 
 
