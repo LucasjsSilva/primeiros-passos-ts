@@ -1,18 +1,24 @@
-//funções
+//interfaces
+type robot1 = {
+    readonly id: number | string;
+    name: string;
+};
 
-function addNumber(x: number, y: number): number{
-    return x + y;
+interface robot2 {
+    readonly id: number | string;
+    name: string;
+};
+
+const bot1: robot1 = {
+    id: "1",
+    name: "surge",
 }
 
-function addToHello(name: string): string{
-    return `Hello ${name}`;
+const bot2: robot2 = {
+    id: "2",
+    name: "at1000",
 }
 
-function callPhone(phone: number | string): number | string{
-    return phone;
-}
+console.log(bot1);
+console.log(bot2);
 
-
-async function getDataBase(id: number): Promise<string> {
-    return "Lucas";
-}
