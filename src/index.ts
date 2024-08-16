@@ -1,41 +1,19 @@
-//interfaces
-type robot1 = {
-    readonly id: number | string;
-    name: string;
-};
+//classes
+class Character {
+    name?: string;
+    stregth: number;
+    skill: number;
 
-interface robot2 {
-    readonly id: number | string;
-    name: string;
-    sayHello(): string;
-};
+    constructor(stregth: number, skill: number){
+        this.stregth = stregth;
+        this.skill = skill;
+    }
 
-const bot1: robot1 = {
-    id: "1",
-    name: "surge",
-}
-
-const bot2: robot2 = {
-    id: "2",
-    name: "at1000",
-    sayHello: function (): string {
-        throw new Error("Function not implemented.");
+    atack(): void{
+        console.log(`Atack with ${this.stregth} points`);
     }
 }
 
-class Pessoa implements robot2{
-    id: string | number;
-    name: string;
-    
-    constructor(id: number, name: string){
-        this.id = id;
-        this.name = name;
-    }
-    sayHello(): string {
-        return `Hello i am ${this.name}`;
-    }
-}
-
-const p = new Pessoa(1, "mario");
-console.log(p.sayHello());
-
+const p1 = new Character(10, 11);
+console.log(p1);
+p1.atack();
