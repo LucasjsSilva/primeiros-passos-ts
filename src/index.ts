@@ -6,3 +6,5 @@ function exibirNome(target: any){
 @exibirNome
 class Carro{}
 
+@exibirNome
+class Coisa{}
